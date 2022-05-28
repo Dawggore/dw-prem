@@ -1,0 +1,1846 @@
+repeat
+  wait()
+until not nil
+if game.PlaceId == 2788229376 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Shazam Fly!", function()
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=3541114300"
+    Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=3541114300"
+    Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616122287"
+    Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=3541044388"
+    Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616115533"
+    Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616104706"
+    Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616108001"
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Shazam!", function()
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=3541114300"
+    Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=3541114300"
+    Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616122287"
+    Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=3541044388"
+    Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616115533"
+    Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616104706"
+    Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616108001"
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Free Animations Gamepass", function()
+    for fd, fe in next, game:GetService("CoreGui"):GetChildren() do
+      if fe.Name:match("FreeAnimationPack") then
+        fe:Destroy()
+      end
+    end
+    function stopTracks()
+      for fd, fe in next, game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() do
+        if not game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() then
+          fe:Stop()
+        end
+      end
+    end
+    function loadAnimation(a)
+      if va.AnimationId == a then
+        stopTracks()
+        va.AnimationId = "1"
+      else
+        va.AnimationId = a
+        game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):LoadAnimation(va):Play()
+      end
+    end
+    Instance.new("ScreenGui").Name = "FreeAnimationPack"
+    Instance.new("ScreenGui").Parent = game.CoreGui
+    Instance.new("ScreenGui").ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    Instance.new("TextButton").Parent, Instance.new("TextButton").Name = Instance.new("ScreenGui"), "AnimationPack"
+    Instance.new("TextButton").BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Instance.new("TextButton").BorderSizePixel = 0
+    Instance.new("TextButton").Position = UDim2.new(0, 0, 0,388007045, 0)
+    Instance.new("TextButton").Size = UDim2.new(0, 100, 0, 20)
+    Instance.new("TextButton").Font = Enum.Font.SourceSansBold
+    Instance.new("TextButton").Text = "Animations"
+    Instance.new("TextButton").TextColor3 = Color3.fromRGB(0, 0, 0)
+    Instance.new("TextButton").TextSize = 18
+    Instance.new("TextButton").MouseButton1Click:Connect(function()
+      if va.Visible == false then
+        va.Visible = true
+      end
+    end)
+    Instance.new("ScrollingFrame").Parent, Instance.new("ScrollingFrame").Name = Instance.new("TextButton"), "Animations"
+    Instance.new("ScrollingFrame").Active = true
+    Instance.new("ScrollingFrame").BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+    Instance.new("ScrollingFrame").Position = UDim2.new(-0,104712225, 0, -1,54173493, 0)
+    Instance.new("ScrollingFrame").Size = UDim2.new(0, 120, 0, 195)
+    Instance.new("ScrollingFrame").Visible = false
+    Instance.new("ScrollingFrame").CanvasPosition = Vector2.new(0, 60,0000305)
+    Instance.new("UIListLayout").Parent, Instance.new("ScrollingFrame").CanvasSize = Instance.new("ScrollingFrame"), UDim2.new(0, 0, 1, 235)
+    Instance.new("UIListLayout").SortOrder = Enum.SortOrder.LayoutOrder
+    Instance.new("UIListLayout").Padding = UDim.new(0, 2)
+    Instance.new("TextButton").Parent, Instance.new("TextButton").Name = Instance.new("ScrollingFrame"), "Lean"
+    Instance.new("TextButton").BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Instance.new("TextButton").Size = UDim2.new(1, 0, 0, 30)
+    Instance.new("TextButton").Font = Enum.Font.SourceSansBold
+    Instance.new("TextButton").Text = "Lean"
+    Instance.new("TextButton").TextColor3 = Color3.fromRGB(0, 0, 0)
+    Instance.new("TextButton").TextSize = 14
+    Instance.new("TextButton").MouseButton1Click:Connect(function()
+      stopTracks()
+      loadAnimation("rbxassetid://3152375249")
+    end)
+    Instance.new("TextButton").Parent, Instance.new("TextButton").Name = Instance.new("ScrollingFrame"), "Lay"
+    Instance.new("TextButton").BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Instance.new("TextButton").Size = UDim2.new(1, 0, 0, 30)
+    Instance.new("TextButton").Font = Enum.Font.SourceSansBold
+    Instance.new("TextButton").Text = "Lay"
+    Instance.new("TextButton").TextColor3 = Color3.fromRGB(0, 0, 0)
+    Instance.new("TextButton").TextSize = 14
+    Instance.new("TextButton").MouseButton1Click:Connect(function()
+      stopTracks()
+      loadAnimation("rbxassetid://3152378852")
+    end)
+    Instance.new("TextButton").Parent, Instance.new("TextButton").Name = Instance.new("ScrollingFrame"), "Dance1"
+    Instance.new("TextButton").BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Instance.new("TextButton").Size = UDim2.new(1, 0, 0, 30)
+    Instance.new("TextButton").Font = Enum.Font.SourceSansBold
+    Instance.new("TextButton").Text = "Dance1"
+    Instance.new("TextButton").TextColor3 = Color3.fromRGB(0, 0, 0)
+    Instance.new("TextButton").TextSize = 14
+    Instance.new("TextButton").MouseButton1Click:Connect(function()
+      stopTracks()
+      loadAnimation("rbxassetid://3189773368")
+    end)
+    Instance.new("TextButton").Parent, Instance.new("TextButton").Name = Instance.new("ScrollingFrame"), "Dance2"
+    Instance.new("TextButton").BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Instance.new("TextButton").Size = UDim2.new(1, 0, 0, 30)
+    Instance.new("TextButton").Font = Enum.Font.SourceSansBold
+    Instance.new("TextButton").Text = "Dance2"
+    Instance.new("TextButton").TextColor3 = Color3.fromRGB(0, 0, 0)
+    Instance.new("TextButton").TextSize = 14
+    Instance.new("TextButton").MouseButton1Click:Connect(function()
+      stopTracks()
+      loadAnimation("rbxassetid://3189776546")
+    end)
+    Instance.new("TextButton").Parent, Instance.new("TextButton").Name = Instance.new("ScrollingFrame"), "Greet"
+    Instance.new("TextButton").BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Instance.new("TextButton").Size = UDim2.new(1, 0, 0, 30)
+    Instance.new("TextButton").Font = Enum.Font.SourceSansBold
+    Instance.new("TextButton").Text = "Greet"
+    Instance.new("TextButton").TextColor3 = Color3.fromRGB(0, 0, 0)
+    Instance.new("TextButton").TextSize = 14
+    Instance.new("TextButton").MouseButton1Click:Connect(function()
+      stopTracks()
+      loadAnimation("rbxassetid://3189777795")
+    end)
+    Instance.new("TextButton").Parent, Instance.new("TextButton").Name = Instance.new("ScrollingFrame"), "ChestPump"
+    Instance.new("TextButton").BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Instance.new("TextButton").Size = UDim2.new(1, 0, 0, 30)
+    Instance.new("TextButton").Font = Enum.Font.SourceSansBold
+    Instance.new("TextButton").Text = "Chest Pump"
+    Instance.new("TextButton").TextColor3 = Color3.fromRGB(0, 0, 0)
+    Instance.new("TextButton").TextSize = 14
+    Instance.new("TextButton").MouseButton1Click:Connect(function()
+      stopTracks()
+      loadAnimation("rbxassetid://3189779152")
+    end)
+    Instance.new("TextButton").Parent, Instance.new("TextButton").Name = Instance.new("ScrollingFrame"), "Praying"
+    Instance.new("TextButton").BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Instance.new("TextButton").Size = UDim2.new(1, 0, 0, 30)
+    Instance.new("TextButton").Font = Enum.Font.SourceSansBold
+    Instance.new("TextButton").Text = "Praying"
+    Instance.new("TextButton").TextColor3 = Color3.fromRGB(0, 0, 0)
+    Instance.new("TextButton").TextSize = 14
+    Instance.new("TextButton").MouseButton1Click:Connect(function()
+      stopTracks()
+      loadAnimation("rbxassetid://3487719500")
+    end)
+    Instance.new("TextButton").Parent, Instance.new("TextButton").Name = Instance.new("ScrollingFrame"), "Stop"
+    Instance.new("TextButton").BackgroundColor3 = Color3.fromRGB(255, 112, 112)
+    Instance.new("TextButton").Size = UDim2.new(1, 0, 0, 30)
+    Instance.new("TextButton").Font = Enum.Font.SourceSansBold
+    Instance.new("TextButton").Text = "Stop Animation"
+    Instance.new("TextButton").TextColor3 = Color3.fromRGB(0, 0, 0)
+    Instance.new("TextButton").TextSize = 14
+    Instance.new("TextButton").MouseButton1Click:Connect(function()
+      stopTracks()
+    end)
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(a)
+      if a == "p" then
+        va.Visible = false
+      end
+    end)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Free Boombox Gmapeass", function()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Auto Reload", function()
+    while not nil do
+      for fe, fg in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if fg:FindFirstChild("Ammo") and fg.Ammo.Value ~= 0 then
+          fg.Parent = game.Players.LocalPlayer.Character
+        end
+      end
+      for fe, fg in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+        if not pairs(game.Players.LocalPlayer.Character:GetChildren()) and fg.Ammo.Value == 0 then
+          game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+        end
+      end
+      for fe, fg in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      end
+      if not (fg:FindFirstChild("Ammo") and true) == true then
+        for fe, fg in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+          if fg:FindFirstChild("Ammo") and fg.Ammo.Value == 0 then
+            game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+            game.Players.LocalPlayer.Character.Humanoid:EquipTool(fg)
+            game.ReplicatedStorage.MainEvent:FireServer("Reload", fg)
+            repeat
+              wait()
+            until fg.Ammo.Value ~= 0
+          end
+        end
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("No Recoil", function()
+    while wait() do
+      if game:GetService("Players").LocalPlayer.Character.BodyEffects.Reload.Value == true then
+        game:GetService("Players").LocalPlayer.Character.BodyEffects.Reload.Value = false
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Aimbot | Right Shift", function()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Fly", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/nrSksppt"))()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("SuperHuman [Z]", function()
+    superhuman = false
+    plr = game.Players.LocalPlayer
+    mouse = plr:GetMouse()
+    mouse.KeyDown:connect(function(a)
+      if a == "z" and superhuman == false then
+        superhuman = true
+        game.Players.LocalPlayer.Character.Humanoid.Name = "Humz"
+        game.Players.LocalPlayer.Character.Humz.WalkSpeed = 100
+        game.Players.LocalPlayer.Character.Humz.JumpPower = 200
+      elseif a == "z" and superhuman == true then
+        superhuman = false
+        game.Players.LocalPlayer.Character.Humz.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humz.JumpPower = 50
+        game.Players.LocalPlayer.Character.Humz.Name = "Humanoid"
+      end
+    end)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Infinite Jump", function()
+    Player = game:GetService("Players").LocalPlayer
+    UIS = game:GetService("UserInputService")
+    _G.JumpHeight = 50
+    function Action(a, b)
+      if a ~= nil then
+        b(a)
+      end
+    end
+    UIS.InputBegan:connect(function(a)
+      if a.UserInputType == Enum.UserInputType.Keyboard and a.KeyCode == Enum.KeyCode.Space then
+        Action(Player.Character.Humanoid, function(a)
+          if a:GetState() == Enum.HumanoidStateType.Jumping or a:GetState() == Enum.HumanoidStateType.Freefall then
+            Action(a.Parent.HumanoidRootPart, function(a)
+              a.Velocity = Vector3.new(0, _G.JumpHeight, 0)
+            end)
+          end
+        end)
+      end
+    end)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Rejoin", function()
+    if #game:GetService("Players"):GetPlayers() <= 1 then
+      game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+    else
+      game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game:GetService("Players").LocalPlayer)
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Sever Hop", function()
+    if #game:GetService("Players"):GetPlayers() <= 1 then
+      game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+    else
+      game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game:GetService("Players").LocalPlayer)
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Naked", function()
+    for fg, fh in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+      if not {
+        "Accessory",
+        "Pants",
+        "Shirt"
+      } or fh.Name == "face" then
+        fh:Destroy()
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Unban", function()
+    game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Health = 0
+    game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function()
+      Instance.new("Folder", game:GetService("Players").LocalPlayer.Character).Name = "FULLY_LOADED_CHAR"
+      game:GetService("Players").LocalPlayer.Character:WaitForChild("BodyEffects"):WaitForChild("Dead"):Remove()
+      Instance.new("BoolValue", game:GetService("Players").LocalPlayer.Character:WaitForChild("BodyEffects")).Name = "Dead"
+      repeat
+        wait()
+      until game:GetService("Players").LocalPlayer.Character:WaitForChild("BodyEffects"):findFirstChild("Dead")
+      game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):WaitForChild("BodyWidthScale").Value = 0,5
+      game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):WaitForChild("HeadScale").Value = 1
+      game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):WaitForChild("BodyHeightScale").Value = 1
+      game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):WaitForChild("BodyDepthScale").Value = 0,5
+      game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):WaitForChild("BodyTypeScale").Value = 0,01
+    end)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("GodMode", function(a)
+    plr.Character.BodyEffects:FindFirstChild("BreakingParts"):Destroy()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.Picture.Life.Visible = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("God Block (SOON!)", function()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Bike Fly", function()
+    game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(a)
+      if va[a:lower()] ~= nil then
+        va[a:lower()] = true
+      end
+    end)
+    game.Players.LocalPlayer:GetMouse().KeyUp:connect(function(a)
+      if va[a:lower()] ~= nil then
+        va[a:lower()] = false
+      end
+    end)
+    while game.RunService.Stepped:wait() do
+      if nil then
+      end
+      if game.Players.LocalPlayer.PlayerGui:FindFirstChild("MainScreenGui") and not nil and game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar:FindFirstChild("Speed") then
+        game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Speed.bar.Size = UDim2.new(20 / 100 * 0,95, 0, 0,83, 0)
+      else
+        game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP:Clone().Name = "Speed"
+        game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP:Clone().Position = UDim2.new(0,5, 0, 1, -120)
+        game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP:Clone().bar.BackgroundColor3 = Color3.fromRGB(255, 155, 0)
+        game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP:Clone().Picture.Image.Image = "rbxassetid://181035717"
+        game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP:Clone().TextLabel.Text = "Speed"
+        game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP:Clone().Parent = game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.Parent
+      end
+      if game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart ~= nil and game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart:IsDescendantOf(game.Workspace.Vehicles) then
+        if game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart ~= nil then
+          if nil then
+            nil.Vel:Destroy()
+            nil.Gyro:Destroy()
+          end
+          for fm = 1, 2 do
+            if {
+              [fm] = {
+                game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart.Parent,
+                game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart.Parent.Wheel
+              }
+            }[fm] then
+              {
+                [fm] = {
+                  game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart.Parent,
+                  game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart.Parent.Wheel
+                }
+              }[fm][2].Parent = {
+                [fm] = {
+                  game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart.Parent,
+                  game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart.Parent.Wheel
+                }
+              }[fm][1]
+            end
+            game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart.Parent.Wheel:remove()
+          end
+          Instance.new("BodyGyro", game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart).Name = "Gyro"
+          Instance.new("BodyVelocity", game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart).Name = "Vel"
+          Instance.new("BodyGyro", game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart).maxTorque = Vector3.new(9000000000, 9000000000, 9000000000)
+          Instance.new("BodyVelocity", game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart).MaxForce = Vector3.new(9000000000, 9000000000, 9000000000)
+        else
+          game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart.Gyro.cframe = workspace.CurrentCamera.CoordinateFrame
+          if not game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart then
+          end
+          if not game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart then
+          end
+          if not game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart then
+          end
+          game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart.Vel.Velocity = game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart.CFrame * (CFrame.new(0, 0, 0) * CFrame.new(0, 0, -20) * CFrame.new(0, 0, 20) * CFrame.new(-20, 0, 0) * CFrame.new(20, 0, 0)).p - game.Players.LocalPlayer.CharacterAdded:wait():WaitForChild("Humanoid").SeatPart.CFrame.p
+        end
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Headless", function()
+    getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
+    getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+    getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Korblox", function()
+    game.Players.LocalPlayer.Character.RightLowerLeg.MeshId = "902942093"
+    game.Players.LocalPlayer.Character.RightLowerLeg.Transparency = "1"
+    game.Players.LocalPlayer.Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+    game.Players.LocalPlayer.Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+    game.Players.LocalPlayer.Character.RightFoot.MeshId = "902942089"
+    game.Players.LocalPlayer.Character.RightFoot.Transparency = "1"
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Fog", function()
+    game:GetService("Lighting").FogEnd = math.huge
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Backflip (Wait few secs) [Z]", function()
+    wait(5)
+    function zeezyFrontflip(a, b, c)
+      if b == Enum.UserInputState.Begin then
+        va.Character.Humanoid:ChangeState("Jumping")
+        wait()
+        va.Character.Humanoid.Sit = true
+        for fh = 1, 360 do
+          delay(fh / 720, function()
+            va.Character.Humanoid.Sit = true
+            va.Character.HumanoidRootPart.CFrame = va.Character.HumanoidRootPart.CFrame * CFrame.Angles(-vb, 0, 0)
+          end)
+        end
+        wait(0,55)
+        va.Character.Humanoid.Sit = false
+      end
+    end
+    function zeezyBackflip(a, b, c)
+      if b == Enum.UserInputState.Begin then
+        va.Character.Humanoid:ChangeState("Jumping")
+        wait()
+        va.Character.Humanoid.Sit = true
+        for fh = 1, 360 do
+          delay(fh / 720, function()
+            va.Character.Humanoid.Sit = true
+            va.Character.HumanoidRootPart.CFrame = va.Character.HumanoidRootPart.CFrame * CFrame.Angles(vb, 0, 0)
+          end)
+        end
+        wait(0,55)
+        va.Character.Humanoid.Sit = false
+      end
+    end
+    function zeezyAirjump(a, b, c)
+      if b == Enum.UserInputState.Begin then
+        va.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Seated")
+        wait()
+        va.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
+      end
+    end
+    game:GetService("ContextActionService"):BindAction("zeezyFrontflip", zeezyFrontflip, false, Enum.KeyCode.Z)
+    game:GetService("ContextActionService"):BindAction("zeezyBackflip", zeezyBackflip, false, Enum.KeyCode.X)
+    game:GetService("ContextActionService"):BindAction("zeezyAirjump", zeezyAirjump, false, Enum.KeyCode.C)
+    Instance.new("Sound", workspace).PlaybackSpeed = 1,5
+    Instance.new("Sound", workspace).Volume = 0,15
+    Instance.new("Sound", workspace).SoundId = "rbxassetid://170765130"
+    Instance.new("Sound", workspace).PlayOnRemove = true
+    Instance.new("Sound", workspace):Destroy()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Anti Flashbang", function()
+    while wait() do
+      pcall(function()
+        game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("MainScreenGui"):FindFirstChild("whiteScreen"):Destroy()
+      end)
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Silnt Block", function()
+    game:GetService("Players").LocalPlayer.Character.BodyEffects.Armor:Destroy()
+    game:GetService("Players").LocalPlayer.Character.BodyEffects.Defense:Destroy()
+    Instance.new("IntValue").Name = "Armor"
+    Instance.new("IntValue").Parent = game:GetService("Players").LocalPlayer.Character.BodyEffects
+    Instance.new("NumberValue").Name = "Defense"
+    Instance.new("NumberValue").Parent = game:GetService("Players").LocalPlayer.Character.BodyEffects
+    wait()
+    while wait() do
+      for fk, fl in next, game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() do
+        if fl.Animation.AnimationId:match("rbxassetid://2788354405") then
+          fl:Stop()
+        end
+      end
+    end
+    wait()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Player Tab"):Button("Unjail", function()
+    if game:GetService("Players").LocalPlayer.DataFolder.Currency.Value >= 125 then
+      game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-270,94, 20,327, -242,38)
+      game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-270,94, 20,327, -242,38)
+      wait()
+      fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Key] - $125"].ClickDetector)
+      wait(0,1)
+      fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Key] - $125"].ClickDetector)
+      fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Key] - $125"].ClickDetector)
+      repeat
+        wait()
+      until game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("[Key]")
+      if game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Health >= 0 then
+        key1 = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("[Key]")
+        if key1 then
+          game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):EquipTool(key1)
+          for fe, fg in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+            if not pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) then
+              game:GetService("Players").LocalPlayer.Character.Humanoid:EquipTool(key1)
+              game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-485,668, 23,631, -285,169)
+              fg:Activate()
+            end
+          end
+        end
+      end
+    end
+    wait(1)
+  end)
+  for ft, fu in pairs(workspace.Ignored.Shop:GetChildren()) do
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("AutoBuy"):Button(fu.Name, function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 3 + 4
+      if game.Players.LocalPlayer.Character.HumanoidRootPart.Position - game.Workspace.Ignored.Shop[va.Name].Head.Position.Magnitude <= 50 then
+        wait(0,2)
+        fireclickdetector(game.Workspace.Ignored.Shop[va.Name]:FindFirstChild("ClickDetector"), 4)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+      end
+    end)
+  end
+  wait(1)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Anti Stomp", function()
+    pcall(function()
+      if tostring(game.PlaceId) == "2788229376" then
+        game:GetService("RunService"):BindToRenderStep("rrrrrrrrrrr", 2000, function()
+          pcall(function()
+            if va.Character.Humanoid.Health <= 30 then
+              va.Character.Humanoid:UnequipTools()
+              va.Character.Humanoid:Destroy()
+              workspace.CurrentCamera.CameraSubject = va.Character
+              wait()
+              Instance.new("Part", (Instance.new("Model", vb))).Name = "Torso"
+              Instance.new("Part", (Instance.new("Model", vb))).Name = "Head"
+              Instance.new("Humanoid", (Instance.new("Model", vb))).Name = "Humanoid"
+              va.Character = Instance.new("Model", vb)
+            end
+          end)
+          pcall(function()
+            if va.Character.Humanoid.FloorMaterial == "Plastic" then
+              ReplicatedStorage:FireServer("Stomp")
+            end
+          end)
+        end)
+      end
+    end)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Katana", function()
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(1, 0, 0,1)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(2, 0, 0,1)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(3, 0, 0,1)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(4, 0, 0,1)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+    game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Free Fists [T]", function()
+    game:GetService("UserInputService").InputBegan:connect(function(a)
+      if a.KeyCode == Enum.KeyCode.T then
+        if va == false then
+          va = true
+          vb()
+          pcall(function()
+            va.RightHand.RightWrist:Remove()
+            va.LeftHand.LeftWrist:Remove()
+          end)
+        elseif va == true then
+          va = false
+          vd()
+          Instance.new("Motor6D").Name = "RightWrist"
+          Instance.new("Motor6D").Parent = vc.RightHand
+          Instance.new("Motor6D").C0 = CFrame.new(1,18422506E-07, -0,5009287, -6,81715525E-18, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+          Instance.new("Motor6D").C1 = CFrame.new(3,55267503E-07, 0,125045404, 5,92112528E-08, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+          Instance.new("Motor6D").Part0 = vc.RightLowerArm
+          Instance.new("Motor6D").Part1 = vc.RightHand
+          Instance.new("Motor6D").Name = "LeftWrist"
+          Instance.new("Motor6D").Parent = vc.LeftHand
+          Instance.new("Motor6D").C0 = CFrame.new(0,000475466368, -0,5009287, 7,59417072E-20, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+          Instance.new("Motor6D").C1 = CFrame.new(0,000475821638, 0,125045404, 5,92112528E-08, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+          Instance.new("Motor6D").Part0 = vc.LeftLowerArm
+          Instance.new("Motor6D").Part1 = vc.LeftHand
+        end
+      end
+    end)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Fake Macro [Q]", function()
+    plr = game:GetService("Players").LocalPlayer
+    down = true
+    function onButton1Down(a)
+      down = true
+      while down and not a do
+        plr.Character.HumanoidRootPart.Velocity = plr.Character.HumanoidRootPart.CFrame.lookVector * 190
+        wait()
+      end
+    end
+    function onButton1Up(a)
+      down = false
+    end
+    function onSelected(a)
+      a.KeyDown:connect(function(a)
+        if a:lower() == "q" then
+          onButton1Down(va)
+        end
+      end)
+      a.KeyUp:connect(function(a)
+        if a:lower() == "q" then
+          onButton1Up(va)
+        end
+      end)
+    end
+    onSelected(game.Players.LocalPlayer:GetMouse())
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Fake Macro (Realistic) [L]", function(a)
+    function stopTracks()
+      for fd, fe in next, game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() do
+        if not game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() then
+          fe:Stop()
+        end
+      end
+    end
+    function loadAnimation(a)
+      if va.AnimationId == a then
+        stopTracks()
+        va.AnimationId = "1"
+      else
+        va.AnimationId = a
+        game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):LoadAnimation(va):Play()
+      end
+    end
+    game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(a)
+      if a == "l" then
+        va = not va
+        if va == true then
+          stopTracks()
+          loadAnimation("rbxassetid://3189777795")
+          wait(1,5)
+          vb.Parent = vc.Character
+          wait(0,15)
+          vc.Character:FindFirstChild("Wallet").Parent = vc.Backpack
+          wait(0,05)
+          repeat
+            game:GetService("RunService").Heartbeat:wait()
+            keypress(73)
+            game:GetService("RunService").Heartbeat:wait()
+            keypress(79)
+            game:GetService("RunService").Heartbeat:wait()
+            keyrelease(73)
+            game:GetService("RunService").Heartbeat:wait()
+            keyrelease(79)
+            game:GetService("RunService").Heartbeat:wait()
+          until va == false
+        end
+      end
+    end)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Fist Reach", function()
+    LP = game.Players.LocalPlayer
+    for fd, fe in ipairs(LP.Character:GetDescendants()) do
+      if fe:IsA("MeshPart") then
+        fe.Massless = true
+        fe.CanCollide = false
+        fe.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
+      end
+    end
+    for fd, fe in ipairs(game.workspace:GetDescendants()) do
+      if not ipairs(game.workspace:GetDescendants()) then
+        fe.Disabled = true
+      end
+    end
+    x = 45
+    y = 45
+    z = 45
+    penis = Vector3.new(x, y, z)
+    LP.Character.RightHand.Size = penis
+    LP.Character.RightHand.Transparency = 1
+    Instance.new("SelectionBox", LP.Character.RightHand).Adornee = LP.Character.RightHand
+    LP.Character.LeftHand.Size = penis
+    LP.Character.LeftHand.Transparency = 1
+    LP.Character.BodyEffects.SpecialParts.LeftHand.Size = penis
+    LP.Character.LeftHand.Transparency = 1
+    Instance.new("SelectionBox", LP.Character.LeftHand).Adornee = LP.Character.LeftHand
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Tool Reach", function()
+    for fd, fe in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+      if not pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) then
+        Instance.new("SelectionBox", fe.Handle).Adornee = fe.Handle
+        fe.Handle.Size = Vector3.new(50, 50, 50)
+        fe.Handle.Transparency = 1
+        fe.GripPos = Vector3.new(0, 0, 0)
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Auto Pick (Dropped Items)", function()
+    for fe, fg in pairs(game.Workspace.Ignored.ItemsDrop:GetChildren()) do
+      if fg.Name == "Part" and (not pairs(game.Workspace.Ignored.ItemsDrop:GetChildren()) or not pairs(game.Workspace.Ignored.ItemsDrop:GetChildren())) then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = fg.CFrame
+        if game.Players.LocalPlayer.Character.HumanoidRootPart.Position - fg.Position.Magnitude < 50 then
+          wait()
+        end
+      end
+    end
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Split Granade [V]", function()
+    repeat
+      wait()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[Grenade] - $700"].Head.CFrame
+      fireclickdetector(game.Workspace.Ignored.Shop["[Grenade] - $700"].ClickDetector)
+    until game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.V)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    for fg, fh in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      wait(0,05)
+      spawn(function()
+        if va.Name == "[Grenade]" then
+          va.Parent = vb.Character
+          va:Activate()
+          wait(0,1)
+          va:Deactivate()
+          wait(0,1)
+          va:Activate()
+        end
+      end)
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Trash Talk (Spam J)", function(a)
+    repeat
+      wait()
+    until not game.Players.LocalPlayer
+    function TrashTalk(a, b)
+      if a.KeyCode == Enum.KeyCode.J and b == false then
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(va[math.random(1, #va)], "All")
+      end
+    end
+    game:GetService("UserInputService").InputBegan:connect(TrashTalk)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Anti Slow", function()
+    game:GetService("Players").LocalPlayer.Character.BodyEffects.Movement.ChildAdded:Connect(function(a)
+      if a.Name == "NoJumping" or a.Name == "ReduceWalk" or a.Name == "NoWalkSpeed" then
+        a:Destroy()
+      end
+    end)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Tornado", function()
+    pcall(function()
+      for fd, fe in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+        if fe.Name == "[Knife]" then
+          fe.Parent = game:GetService("Players").LocalPlayer.Character
+        end
+      end
+    end)
+    game:GetService("UserInputService").InputBegan:connect(TrashTalk)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Slider("FOV Slider", 80, 120, 0, function(a)
+    workspace.CurrentCamera.FieldOfView = a
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Fly Meele", function()
+    for fd, fe in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+      if not pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) then
+        fe.GripPos = Vector3.new(10, -10, 10)
+      end
+    end
+    wait(1)
+    game.StarterGui:SetCore("SendNotification", {
+      Title = "DemonWare",
+      Text = "U Have To Be Holding A Meele Tool",
+      Duration = 15
+    })
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Fly Gun", function()
+    for fd, fe in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+      if fe:isA("Tool") then
+        fe.GripPos = Vector3.new(10, -10, 10)
+      end
+    end
+    wait(1)
+    game.StarterGui:SetCore("SendNotification", {
+      Title = "DemonWare",
+      Text = "U Have To Be Holding A Gun",
+      Duration = 15
+    })
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Mod Menu", function()
+    wait()
+    Instance.new("ScreenGui", game.CoreGui).Name = "Drxco's Menu"
+    Instance.new("ScrollingFrame", (Instance.new("ScreenGui", game.CoreGui))).Size = UDim2.new(0,3, 0, 0,4, 0)
+    Instance.new("ScrollingFrame", (Instance.new("ScreenGui", game.CoreGui))).Position = UDim2.new(0,65, 0, 0,2, 0)
+    Instance.new("ScreenGui", game.CoreGui).Parent = nil
+    function enableGUI()
+      table.sort(game.Players:GetChildren(), function(a, b)
+        return a:GetFullName() <= b:GetFullName()
+      end)
+      while true do
+        if game.Players:GetChildren() then
+          break
+        end
+        Instance.new("TextButton").Size = UDim2.new(0,25, 0, 0, 45)
+        Instance.new("TextButton").Position = UDim2.new(0, 0, 0, 0 * 50)
+        Instance.new("TextButton").BackgroundColor3 = BrickColor.Red().Color
+        Instance.new("TextButton").Text = pairs((game.Players:GetChildren()))(pairs((game.Players:GetChildren()))).Name
+        Instance.new("TextButton").TextScaled = true
+        Instance.new("TextButton").Parent = va
+        Instance.new("TextButton"):Clone().Text = "Spectate"
+        Instance.new("TextButton"):Clone().Position = UDim2.new(0,75, 0, 0, 0 * 50)
+        Instance.new("TextButton"):Clone().Size = UDim2.new(0,25, 0, 0, 45)
+        Instance.new("TextButton"):Clone().BackgroundColor3 = BrickColor.White().Color
+        Instance.new("TextButton"):Clone().Parent = va
+        Instance.new("TextButton"):Clone().Size = UDim2.new(0,25, 0, 0, 45)
+        Instance.new("TextButton"):Clone().Position = UDim2.new(0,25, 0, 0, 0 * 50)
+        Instance.new("TextButton"):Clone().BackgroundColor3 = BrickColor.Green().Color
+        Instance.new("TextButton"):Clone().Text = "UnBan"
+        Instance.new("TextButton"):Clone().Parent = va
+        Instance.new("TextBox").Size = UDim2.new(0,25, 0, 0, 45)
+        Instance.new("TextBox").Position = UDim2.new(0,5, 0, 0, 0 * 50)
+        Instance.new("TextBox").Text = "Ban/UnBan Note Here"
+        Instance.new("TextBox").Font = Instance.new("TextButton").Font
+        Instance.new("TextBox").TextScaled = true
+        Instance.new("TextBox").Parent = va
+        Instance.new("TextButton").MouseButton1Click:connect(function()
+          if va == false then
+            va = true
+            vb:FireServer("BANREMOTE", vc, vd.Text)
+            wait(0,5)
+            va = false
+          end
+        end)
+        Instance.new("TextButton"):Clone().MouseButton1Click:connect(function()
+          va:FireServer("UNBANREMOTE", vb, vc.Text)
+        end)
+        Instance.new("TextButton"):Clone().MouseButton1Click:connect(function()
+          va.CameraSubject = vb.Character.Humanoid
+        end)
+      end
+      va.CanvasSize = UDim2.new(0, 0, 0, (0 + 1) * 50)
+      vd.Parent = game.CoreGui
+    end
+    enableGUI()
+    Instance.new("Frame", (Instance.new("ScreenGui", game.CoreGui))).FindServer.MouseButton1Click:connect(function()
+      va:FireServer("FindServer", vb.PlayerName.Text)
+    end)
+    Instance.new("Frame", (Instance.new("ScreenGui", game.CoreGui))).JoinServer.MouseButton1Click:connect(function()
+      va:FireServer("JoinServer", vb.ServerId.Text)
+    end)
+    game:GetService("UserInputService").InputBegan:connect(function(a, b)
+      if a and a.UserInputType == Enum.UserInputType.Keyboard and a.KeyCode == Enum.KeyCode.B and va == false then
+        va = true
+        if vb.Parent == nil then
+          enableGUI()
+        else
+          vb.Parent = nil
+          for fg, fh in pairs(vc:GetChildren()) do
+            fh:Destroy()
+          end
+        end
+        wait(0,2)
+        va = false
+      end
+    end)
+    while wait() do
+      if Instance.new("ScreenGui", game.CoreGui).Parent == game.Players.LocalPlayer.PlayerGui then
+        for fp = #{}, 1, -1 do
+          {}[fp]:Destroy()
+          table.remove({}, fp)
+        end
+        for fp, fn in pairs(game.Players:GetChildren()) do
+          pcall(function()
+            if vb.CFrame.lookVector:Dot(va.Character.LowerTorso.Position - vb.CFrame.p.unit) >= 0 then
+              Instance.new("TextLabel").Name = va.Character.Name
+              Instance.new("TextLabel").Text = va.Character.Name
+              Instance.new("TextLabel").TextSize = 20
+              Instance.new("TextLabel").Font = Enum.Font.ArialBold
+              if not (vb.CFrame.p - va.Character.LowerTorso.Position.magnitude <= 75) or not Color3.fromRGB(137, 211, 205) then
+              end
+              Instance.new("TextLabel").TextColor3 = Color3.new(1, 0, 0)
+              Instance.new("TextLabel").Position = UDim2.new(0, vb:WorldToScreenPoint(va.Character.UpperTorso.Position).x, 0, vb:WorldToScreenPoint(va.Character.UpperTorso.Position).y)
+              Instance.new("TextLabel").Parent = vc
+              table.insert(vd, (Instance.new("TextLabel")))
+            end
+          end)
+        end
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Aimbot V2 | E", function()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Bag All", function()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Granade All", function()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Play All Sounds [FE]", function()
+    sounds = {}
+    function getSounds(a)
+      if a:IsA("Sound") then
+        table.insert(sounds, a)
+      end
+      for fe, fg in pairs(a:GetChildren()) do
+        getSounds(fg)
+      end
+    end
+    getSounds(game)
+    game.DescendantAdded:connect(function(a)
+      if not a then
+        table.insert(sounds, a)
+      end
+    end)
+    while not 0,2 do
+      for fd, fe in pairs(sounds) do
+        pcall(function()
+          va:Play()
+        end)
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Equip All", function()
+    for fd, fe in next, game:GetService("Players").LocalPlayer.Backpack:GetChildren() do
+      if not game:GetService("Players").LocalPlayer.Backpack:GetChildren() then
+        fe.Parent = game:GetService("Players").LocalPlayer.Character
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Mask Names", function()
+    for fd, fe in pairs(game:GetService("Players"):GetPlayers()) do
+      if not pairs(game:GetService("Players"):GetPlayers()) and not pairs(game:GetService("Players"):GetPlayers()) and not pairs(game:GetService("Players"):GetPlayers()) and fe.Character:FindFirstChildOfClass("Humanoid").DisplayDistanceType ~= Enum.HumanoidDisplayDistanceType.Viewer then
+        fe.Character:FindFirstChildOfClass("Humanoid").DisplayDistanceType = Enum.HumanoidDisplayDistanceType.Viewer
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Invisible Mask", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 3 + 4
+    if game.Players.LocalPlayer.Character.HumanoidRootPart.Position - game.Workspace.Ignored.Shop["[Surgeon Mask] - $25"].Head.Position.Magnitude < 50 then
+      wait(0,2)
+      fireclickdetector(game.Workspace.Ignored.Shop["[Surgeon Mask] - $25"]:FindFirstChild("ClickDetector"), 4)
+      toolf = game.Players.LocalPlayer.Backpack:WaitForChild("Mask")
+      toolf.Parent = game.Players.LocalPlayer.Character
+      wait()
+      game.Players.LocalPlayer.Character:WaitForChild("Mask")
+      game:GetService("VirtualUser"):ClickButton1(Vector2.new())
+      game.Players.LocalPlayer.Character:WaitForChild("In-gameMask")
+      game.Players.LocalPlayer.Character["In-gameMask"].Handle:Destroy()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("SPY", function()
+    enabled = true
+    spyOnMyself = false
+    public = false
+    publicItalics = true
+    privateProperties = {
+      Color = Color3.fromRGB(0, 255, 255),
+      Font = Enum.Font.SourceSansBold,
+      TextSize = 18
+    }
+    if game:GetService("Players") and game:GetService("Players") then
+    end
+    _G.chatSpyInstance = 5 + 1
+    for fm, fo in ipairs(game:GetService("Players"):GetPlayers()) do
+      fo.Chatted:Connect(function(a)
+        va(vb, a)
+      end)
+    end
+    game:GetService("Players").PlayerAdded:Connect(function(a)
+      a.Chatted:Connect(function(a)
+        va(vb, a)
+      end)
+    end)
+    privateProperties.Text = "{SPY " .. (game:GetService("Players") or "DIS") .. "ABLED}"
+    game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", privateProperties)
+    if not game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("Chat") then
+      wait(3)
+    end
+    game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatChannelParentFrame.Visible = true
+    game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Position = 9 + 10
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Dick Bat", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 3 + 4
+    if game.Players.LocalPlayer.Character.HumanoidRootPart.Position - game.Workspace.Ignored.Shop["[Bat] - $250"].Head.Position.Magnitude < 50 then
+      wait(0,2)
+      fireclickdetector(game.Workspace.Ignored.Shop["[Bat] - $250"]:FindFirstChild("ClickDetector"), 4)
+      toolf = game.Players.LocalPlayer.Backpack:WaitForChild("[Bat]")
+      toolf.Parent = game.Players.LocalPlayer.Character
+      wait()
+      game.Players.LocalPlayer.Character:WaitForChild("[Bat]")
+      game.Players.LocalPlayer.Character:WaitForChild("[Bat]").Grip = CFrame.new(-2,4000001, -0,699999988, 0, 0, 1, 0, -1, 0, 0, 0, 0, 1)
+      game.Players.LocalPlayer.Character:WaitForChild("[Bat]").GripForward = Vector3.new(0, -1, 0)
+      game.Players.LocalPlayer.Character:WaitForChild("[Bat]").GripPos = Vector3.new(1,2111, 1,11114, 1,8111)
+      game.Players.LocalPlayer.Character:WaitForChild("[Bat]").GripUp = Vector3.new(-500000, 404, 5000000)
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Combat Tab"):Button("Tools While Jailed", function()
+    game:GetService("Players").LocalPlayer.Character.BodyEffects.Cuff:Destroy()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Bank", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-485,668, 23,631, -285,169)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Boxing Place", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-236,006, 23,151, -1120,531)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Police Station", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-267,637, 21,807, -121,982)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Admin Base", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-729,895, -37,642, -885,8)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Sewers", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(112,622, -26,212, -277,321)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Shoe Store", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(workspace.Ignored.Drop:FindFirstChildOfClass("MeshPart").Position)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Hospital", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(86,518, 21,755, -481,68)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Phone Store", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-120,121, 22,946, -870,425)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Taco Shack", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(546,946, 51,061, -493,325)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Casino", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-879,277, 21,254, -190,199)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("UFO", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(71,565, 142,926, -690,33)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Fire Station", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-132,674, 21,28, -145,176)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Gas Station", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(595,377, 49, -264,222)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Church", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(203,938, 21,75, -98,446)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Gun Store 1", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-582, 7,172, -739,015)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Teleports"):Button("Gun Store 2", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(475,022, 48,005, -603,737)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Autofarm"):Button("Fist Farm (HUGE FIX!)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/rapnz/scripts/master/DaHoodFarm.lua"))()
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Autofarm"):Button("Fast Farm", function()
+    setreadonly(getrawmetatable(game), false)
+    game:GetService("RunService").Stepped:connect(function()
+      pcall(function()
+        va.Character.Humanoid:ChangeState(11)
+      end)
+    end)
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+      game:GetService("VirtualUser"):Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
+      wait(1)
+      game:GetService("VirtualUser"):Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
+    end)
+    repeat
+      wait()
+    until not game:GetService("Players")
+    spawn(function()
+      wait(10)
+      va = false
+    end)
+    while true do
+      game:GetService("RunService").Stepped:wait()
+      if 0 <= game:GetService("Stats").PhysicsReceiveKbps then
+        print("current benchmark (recived kbps)", game:GetService("Stats").PhysicsReceiveKbps)
+      end
+    end
+    function equipTool(a)
+      if not a then
+        return va.Character[a]
+      end
+      if va.Backpack:FindFirstChild(a) then
+        va.Character.Humanoid:EquipTool(va.Backpack[a])
+        return va.Character:WaitForChild(a)
+      end
+    end
+    function getNearbyCash(a)
+      for fg = 1, #va.Ignored.Drop:GetChildren() do
+        if va.Ignored.Drop:GetChildren()[fg].Name == "MoneyDrop" and vb.Character.HumanoidRootPart.Position - va.Ignored.Drop:GetChildren()[fg].Position.Magnitude < 20 then
+          wait(a or 0,7)
+          fireclickdetector(va.Ignored.Drop:GetChildren()[fg].ClickDetector, 0)
+        end
+      end
+    end
+    getrawmetatable(game).__index = newcclosure(function(a, b)
+      if not b and (b == "Hit" or b == "Target") and not b then
+        return va
+      end
+      return vb(a, b)
+    end)
+    while not game:GetService("Players") do
+      pcall(function()
+        va.Character.Humanoid:UnequipTools()
+        for fe, fg in next, va.Backpack:GetChildren() do
+          if not next then
+          end
+        end
+        for fj = 1, #vc.Cashiers:GetChildren() do
+          if game:GetService("Stats").PhysicsReceiveKbps <= vd - ve then
+            print("you-are-too-laggy-young-one")
+            repeat
+              wait()
+              va.Character.HumanoidRootPart.CFrame = CFrame.new(0, 10000, 0)
+            until game:GetService("Stats").PhysicsReceiveKbps >= vd - ve
+            va.Character.HumanoidRootPart.CFrame = va.Character.HumanoidRootPart.CFrame
+          end
+          if 0 <= vc.Cashiers:GetChildren()[fj].Humanoid.Health then
+            vg = vc.Cashiers:GetChildren()[fj].Open
+            while 0 <= vc.Cashiers:GetChildren()[fj].Humanoid.Health do
+              wait()
+              if not va.Character.HumanoidRootPart.CFrame and equipTool(fg.Name or "Combat").Ammo.Value == 0 then
+                if va.DataFolder.Inventory[equipTool(fg.Name or "Combat").Name].Value == "0" then
+                  for fq = 1, 2 do
+                    for fW, fE in next, game.Workspace.Ignored.Shop:GetChildren() do
+                      if not va.Character.HumanoidRootPart.CFrame and math.huge > #fE.Name:gsub(".", function(a)
+                        va = 1 + 1
+                        if a == "[" then
+                          vb = va
+                          return ""
+                        elseif a == "]" then
+                          vc = va
+                          return ""
+                        elseif a == "$" then
+                          vd = va
+                          return ""
+                        elseif not a and va >= vd then
+                          ve = ve .. a
+                          return ""
+                        elseif not vb or not a and va >= vc then
+                          return ""
+                        else
+                          return a:lower()
+                        end
+                      end) - (string.find(fE.Name:gsub(".", function(a)
+                        va = 1 + 1
+                        if a == "[" then
+                          vb = va
+                          return ""
+                        elseif a == "]" then
+                          vc = va
+                          return ""
+                        elseif a == "$" then
+                          vd = va
+                          return ""
+                        elseif not a and va >= vd then
+                          ve = ve .. a
+                          return ""
+                        elseif not vb or not a and va >= vc then
+                          return ""
+                        else
+                          return a:lower()
+                        end
+                      end), equipTool(fg.Name or "Combat").Name:gsub(".", function(a)
+                        if a == "[" or a == "]" then
+                          return ""
+                        else
+                          return a:lower()
+                        end
+                      end) .. " ammo":lower()) - string.find(fE.Name:gsub(".", function(a)
+                        va = 1 + 1
+                        if a == "[" then
+                          vb = va
+                          return ""
+                        elseif a == "]" then
+                          vc = va
+                          return ""
+                        elseif a == "$" then
+                          vd = va
+                          return ""
+                        elseif not a and va >= vd then
+                          ve = ve .. a
+                          return ""
+                        elseif not vb or not a and va >= vc then
+                          return ""
+                        else
+                          return a:lower()
+                        end
+                      end), equipTool(fg.Name or "Combat").Name:gsub(".", function(a)
+                        if a == "[" or a == "]" then
+                          return ""
+                        else
+                          return a:lower()
+                        end
+                      end) .. " ammo":lower())) then
+                        if fq == 2 and math.huge >= tonumber("") then
+                        else
+                        end
+                      end
+                    end
+                  end
+                  repeat
+                    wait()
+                    va.Character.HumanoidRootPart.CFrame = fE.Head.CFrame
+                    fireclickdetector(fE.ClickDetector)
+                    va.Character.Humanoid:UnequipTools()
+                  until tonumber(va.DataFolder.Inventory[equipTool(fg.Name or "Combat").Name].Value) > 400
+                else
+                  vh:FireServer("Reload", equipTool(fg.Name or "Combat"), true)
+                  repeat
+                    wait()
+                  until va.Character.BodyEffects.Reload.Value == false
+                end
+              end
+              va.Character.HumanoidRootPart.CFrame = 9 + 10
+              equipTool(fg.Name or "Combat"):Activate()
+            end
+            getNearbyCash(math.abs(vd - game:GetService("Stats").PhysicsReceiveKbps) / 6)
+            wait(math.abs(vd - game:GetService("Stats").PhysicsReceiveKbps) / 4)
+          end
+        end
+        if not va.Character.HumanoidRootPart.CFrame then
+          va.Character.HumanoidRootPart.CFrame = CFrame.new(0, 10000, 0)
+          if vj then
+            vj = false
+            print("no-more-cashiers-available")
+          end
+        else
+          vj = true
+        end
+        vg = nil
+      end)
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Autofarm"):Button("Shotgun Farm (Execute Twice, Buy Much Ammo)", function()
+    if game.Players.LocalPlayer.Character.Animate:FindFirstChild("idle") then
+      game.Players.LocalPlayer.Character.Animate.idle:Destroy()
+    end
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.Ignored.Shop["[Shotgun] - $1250"].Head.Position)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[Shotgun] - $1250"].ClickDetector)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[Shotgun] - $1250"].ClickDetector)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[Shotgun] - $1250"].ClickDetector)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[Shotgun] - $1250"].ClickDetector)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[Shotgun] - $1250"].ClickDetector)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[Shotgun] - $1250"].ClickDetector)
+    wait(0,1)
+    game:service("Players").LocalPlayer.Character.Humanoid:EquipTool(game:service("Players").LocalPlayer.Backpack:FindFirstChild("[Shotgun]"))
+    wait(0,001)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+    function bypass()
+      game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-346,434296, 52,5954704, 446,756989)
+      wait(1,5)
+    end
+    repeat
+      wait()
+    until not game.Players.LocalPlayer
+    if workspace.Players[game.Players.LocalPlayer.Name]:FindFirstChild("[Shotgun]") then
+      workspace.Players[game.Players.LocalPlayer.Name]:FindFirstChild("[Shotgun]").Name = "[Drxco]"
+      function Buy()
+        fireclickdetector(workspace.Ignored.Shop["20 [Shotgun Ammo] - $60"].ClickDetector)
+        fireclickdetector(workspace.Ignored.Shop["20 [Shotgun Ammo] - $60"].ClickDetector)
+      end
+      function GetATM()
+        bypass()
+        for fd, fe in pairs(workspace.Cashiers:GetChildren()) do
+          if fe:WaitForChild("Humanoid").Health >= 0 then
+            game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = 5 + 8
+            game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", fe.Open.Position)
+            return fe
+          end
+        end
+      end
+      function GETMONEY()
+        for fd, fe in pairs(workspace.Ignored.Drop:GetChildren()) do
+          if fe.Name == "MoneyDrop" and workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.Position - fe.Position.Magnitude <= 25 then
+            va = true
+            fireclickdetector(fe.ClickDetector)
+            wait(0,7)
+            va = false
+          end
+        end
+      end
+      function reload(a, b)
+        game:GetService("ReplicatedStorage").MainEvent:FireServer("Reload", game:GetService("Workspace").Players[a][b])
+      end
+      game:GetService("RunService").Heartbeat:Connect(function()
+        GETMONEY()
+        game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        if va == 0 and vb == false then
+          if game.Players.LocalPlayer.DataFolder.Inventory["[Shotgun]"].Value == "0" and vc == false then
+            va = 10
+            vc = true
+            game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = CFrame.new(workspace.Ignored.Shop["20 [Shotgun Ammo] - $60"].Head.CFrame.X, 4 + 4, workspace.Ignored.Shop["20 [Shotgun Ammo] - $60"].Head.CFrame.Z)
+            game.workspace.Players[game.Players.LocalPlayer.Name]["[Drxco]"].Parent = game.Players.LocalPlayer.Backpack
+            wait(2)
+            for fe = 1, 10 do
+              game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = CFrame.new(7 + 8, 8 + 9, 9 + 10)
+              Buy()
+              wait(0,5)
+            end
+            game.Players.LocalPlayer.Backpack["[Drxco]"].Parent = game.workspace.Players[game.Players.LocalPlayer.Name]
+            va = 0
+            vc = false
+            game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = 1 + 4
+          end
+          if game.workspace.Players[game.Players.LocalPlayer.Name]:WaitForChild("[Drxco]").Ammo.Value == 4 and vc == false then
+            vc = true
+            reload(game.Players.LocalPlayer.Name, "[Drxco]")
+            wait(0,5)
+            vc = false
+          else
+            for fd, fe in pairs(workspace.Cashiers:GetChildren()) do
+              if 0 <= fe:WaitForChild("Humanoid").Health and vc == false and 0 <= vd.Humanoid.Health then
+                game:GetService("VirtualUser"):Button1Down(Vector2.new(0, 0, 0))
+                game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = 5 + 8
+              end
+            end
+          end
+          for fd, fe in pairs(workspace.Cashiers:GetChildren()) do
+            if 0 < fe:WaitForChild("Humanoid").Health and 0 >= vd.Humanoid.Health and vc == false then
+              va = 10
+              wait(0,1)
+              if vc == false then
+                game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = 5 + 8
+                vd = GetATM()
+              end
+              va = 0
+            end
+          end
+        end
+      end)
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Autofarm"):Button("P90 Farm", function()
+    if game.Players.LocalPlayer.Character.Animate:FindFirstChild("idle") then
+      game.Players.LocalPlayer.Character.Animate.idle:Destroy()
+    end
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.Ignored.Shop["[P90] - $1000"].Head.Position)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[P90] - $1000"].ClickDetector)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[P90] - $1000"].ClickDetector)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[P90] - $1000"].ClickDetector)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[P90] - $1000"].ClickDetector)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[P90] - $1000"].ClickDetector)
+    wait(0,1)
+    fireclickdetector(game.Workspace.Ignored.Shop["[P90] - $1000"].ClickDetector)
+    wait(0,1)
+    game:service("Players").LocalPlayer.Character.Humanoid:EquipTool(game:service("Players").LocalPlayer.Backpack:FindFirstChild("[P90]"))
+    wait(0,001)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+    function bypass()
+      game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-346,434296, 52,5954704, 446,756989)
+      wait(1,5)
+    end
+    repeat
+      wait()
+    until game:IsLoaded()
+    if not game.Players.LocalPlayer then
+      workspace.Players[game.Players.LocalPlayer.Name]:FindFirstChild("[P90]").Name = "[P900]"
+    else
+      game.Players.LocalPlayer.Backpack["[P90]"].Parent = workspace.Players[game.Players.LocalPlayer.Name]
+      game.workspace.Players[game.Players.LocalPlayer.Name]:FindFirstChild("[P90]").Name = "[P900]"
+    end
+    function Buy()
+      fireclickdetector(workspace.Ignored.Shop["120 [P90 Ammo] - $60"].ClickDetector)
+    end
+    function GetCash()
+      for fd, fe in pairs(workspace.Ignored.Drop:GetChildren()) do
+        if fe.Name == "MoneyDrop" and workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.Position - fe.Position.Magnitude <= 12 then
+          va = true
+          fireclickdetector(fe.ClickDetector)
+          wait(1)
+          va = false
+        end
+      end
+    end
+    function getATM()
+      for fd, fe in pairs(workspace.Cashiers:GetChildren()) do
+        if fe:WaitForChild("Humanoid").Health > 0 then
+          game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = 5 + 8
+          game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", fe.Head.Position)
+          return fe
+        end
+      end
+    end
+    function reload(a, b)
+      game:GetService("ReplicatedStorage").MainEvent:FireServer("Reload", game:GetService("Workspace").Players[a][b])
+    end
+    game:GetService("RunService").Heartbeat:Connect(function()
+      GetCash()
+      game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+      if va == 0 and vb == false then
+        if game.Players.LocalPlayer.DataFolder.Inventory["[P90]"].Value == "0" and vc == false then
+          va = 10
+          vc = true
+          game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = CFrame.new(workspace.Ignored.Shop["120 [P90 Ammo] - $60"].Head.CFrame.X, 4 + 4, workspace.Ignored.Shop["120 [P90 Ammo] - $60"].Head.CFrame.Z)
+          game.workspace.Players[game.Players.LocalPlayer.Name]["[P900]"].Parent = game.Players.LocalPlayer.Backpack
+          wait(2)
+          for fe = 1, 10 do
+            game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = CFrame.new(7 + 8, 8 + 9, 9 + 10)
+            print("e")
+            Buy()
+            wait(1)
+          end
+          game.Players.LocalPlayer.Backpack["[P900]"].Parent = game.workspace.Players[game.Players.LocalPlayer.Name]
+          va = 0
+          vc = false
+          game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = 1 + 4
+        end
+        if game.workspace.Players[game.Players.LocalPlayer.Name]:WaitForChild("[P900]").Ammo.Value == 0 and vc == false then
+          vc = true
+          reload(game.Players.LocalPlayer.Name, "[P900]")
+          wait(2)
+          vc = false
+        else
+          for fd, fe in pairs(workspace.Cashiers:GetChildren()) do
+            if 0 <= fe:WaitForChild("Humanoid").Health and vc == false and 0 < vd.Humanoid.Health then
+              game:GetService("VirtualUser"):Button1Down(Vector2.new(0, 0, 0))
+              game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = 5 + 8
+            end
+          end
+        end
+        for fd, fe in pairs(workspace.Cashiers:GetChildren()) do
+          if 0 <= fe:WaitForChild("Humanoid").Health and 0 >= vd.Humanoid.Health and vc == false then
+            va = 10
+            wait(0,1)
+            if vc == false then
+              game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = 5 + 8
+              vd = getATM()
+            end
+            va = 0
+          end
+        end
+      end
+    end)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Autofarm"):Button("Auto Muscle", function()
+    while true do
+      wait()
+      if not game.Players.LocalPlayer.Character:FindFirstChild("[HeavyWeights]") then
+        wait()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 2 + 3
+        if game.Players.LocalPlayer.Character.HumanoidRootPart.Position - game.Workspace.Ignored.Shop["[HeavyWeights] - $250"].Head.Position.Magnitude < 50 then
+          wait(0,2)
+          fireclickdetector(game.Workspace.Ignored.Shop["[HeavyWeights] - $250"]:FindFirstChild("ClickDetector"), 4)
+        end
+      end
+      if game.Players.LocalPlayer.Character then
+        tool = game.Players.LocalPlayer.Backpack:WaitForChild("[HeavyWeights]")
+        tool.Parent = game.Players.LocalPlayer.Character
+      end
+      game:GetService("VirtualUser"):ClickButton1(Vector2.new())
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new((Vector3.new(-1006,99, -51,1542, -1014,33)))
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Autofarm"):Button("Auto Box", function()
+    while true do
+      wait()
+      if not game.Players.LocalPlayer.Character:FindFirstChild("Combat") then
+        game.Players.LocalPlayer.Backpack:FindFirstChild("Combat").Parent = game.Players.LocalPlayer.Character
+      end
+      for fd, fe in pairs(game.Workspace.MAP.Map.ArenaBOX:GetChildren()) do
+        wait()
+        warn(fe)
+        if fe.Name == "PunchingBagInGame" then
+          wait()
+          posMx = fe:FindFirstChild("pretty ransom").Position - Vector3.new(0, 0, 0)
+          poscMx = fe:FindFirstChild("pretty ransom").CFrame - Vector3.new(3, 0, 0)
+          ToShoes(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, posMx, poscMx)
+          while true do
+            if not game.Players.LocalPlayer.Character:FindFirstChild("Combat") then
+              game.Players.LocalPlayer.Backpack:FindFirstChild("Combat").Parent = game.Players.LocalPlayer.Character
+            end
+            ToShoes(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, posMx, poscMx)
+            wait(0,5)
+            game:GetService("VirtualUser"):ClickButton1(Vector2.new())
+          end
+        end
+      end
+    end
+  end)
+  wait(1)
+  _G.CashDropAmount = 10000
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Money"):Button("Fast Drop Cash", nil, function(a)
+    while not nil do
+      wait()
+      game.ReplicatedStorage.MainEvent:FireServer("DropMoney", _G.CashDropAmount)
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Money"):Textbox("Cash Drop Amount", "10000", function(a, b)
+    if not a then
+      _G.CashDropAmount = a
+    end
+  end)
+  wait(1)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Money"):Slider("Fake Cash", 0, 10000000, 0, function(a)
+    game.Players.LocalPlayer.PlayerGui.Framework.CurrencySound:Play()
+    game.Players.LocalPlayer.DataFolder.Currency.Value = a
+    game.Players.LocalPlayer.PlayerGui.MainScreenGui.MoneyText.Text = "$" .. a
+    if game.Players.LocalPlayer.Backpack:FindFirstChild("Wallet") then
+      game.Players.LocalPlayer.Backpack.Wallet.Handle.BillboardGui.TextLabel.Text = "$" .. a
+    else
+      game.Players.LocalPlayer.Character.Wallet.Handle.BillboardGui.TextLabel.Text = "$" .. a
+    end
+  end)
+  wait(1)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Money"):Button("Cash ESP", function()
+    function cham(a)
+      if a.Name == "MoneyDrop" then
+        Instance.new("BoxHandleAdornment", va).Adornee = a
+        Instance.new("BoxHandleAdornment", va).AlwaysOnTop = true
+        Instance.new("BoxHandleAdornment", va).ZIndex = 10
+        Instance.new("BoxHandleAdornment", va).Size = a.Size
+        Instance.new("BoxHandleAdornment", va).Transparency = 0,3
+        Instance.new("BoxHandleAdornment", va).Color = a.BrickColor
+        a:WaitForChild("BillboardGui").AlwaysOnTop = true
+        a:WaitForChild("BillboardGui").Size = UDim2.new(2, 10, 1, 5)
+        spawn(function()
+          while true do
+            if va.Parent.ChildRemoving:wait() == va then
+              vb:Destroy()
+              break
+            end
+          end
+        end)
+      end
+    end
+    for fe, fg in next, game.Workspace.Ignored.Drop:GetChildren() do
+      cham(fg)
+    end
+    game.Workspace.Ignored.Drop.ChildAdded:connect(cham)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Money"):Button("Bring Cash", function()
+    for fd, fe in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+      if fe.Name == "MoneyDrop" then
+        fe.Position = 5 + 6
+        fe.Anchored = false
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Money"):Button("Cash Scaffold", function()
+    while wait() do
+      for fd, fe in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+        if fe.Name == "MoneyDrop" then
+          fe.CFrame = 5 + 6
+          fe.CanCollide = false
+        end
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Money"):Button("Cash Float", function()
+    spawn(function()
+      repeat
+        game:GetService("RunService").Heartbeat:wait()
+        settings().Physics.AllowSleep = false
+        settings().Physics.ThrottleAdjustTime = math.huge - math.huge
+        setsimulationradius(1000000000, 1000000000)
+        game:GetService("RunService").Stepped:wait()
+      until not game:GetService("RunService").Stepped
+    end)
+    for fe, fg in ipairs(workspace:GetDescendants()) do
+      if fg:IsA("Part") and fg.Anchored == false and ipairs(workspace:GetDescendants()) then
+        (function(a)
+          if not a then
+            return
+          end
+          Instance.new("BodyForce").Force = a:GetMass() * Vector3.new(0, workspace.Gravity, 0)
+          Instance.new("BodyForce").Parent = a
+        end)(fg)
+      end
+    end
+    workspace.DescendantAdded:Connect(function(a)
+      if not a and a.Anchored == false and a then
+        va(a)
+      end
+    end)
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Money"):Button("Cash Fling", function()
+    for fd, fe in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+      if fe.Name == "MoneyDrop" then
+        Instance.new("BodyPosition", fe).D = 0
+        Instance.new("BodyPosition", fe).MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+        Instance.new("BodyPosition", fe).P = 15000
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Money"):Button("Cash Destroy", function()
+    for fd, fe in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+      if fe.Name == "MoneyDrop" then
+        fe:Destroy()
+      end
+    end
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Money"):Button("Cash Spin", function()
+    for fd, fe in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+      if fe.Name == "MoneyDrop" then
+        Instance.new("BodyPosition").Parent = fe
+        Instance.new("BodyAngularVelocity").Parent = fe
+        Instance.new("BodyAngularVelocity").AngularVelocity = Vector3.new(0, 100, 0)
+        Instance.new("BodyAngularVelocity").MaxTorque = Vector3.new(0, 200, 0)
+      end
+    end
+  end)
+  wait(1)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Astronaut", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=891667138"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=891636393"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=891627522"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=891609353"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=891617961"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Bubbly", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=910004836"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=910009958"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=910034870"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=910025107"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=910016857"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=910001910"
+    game.Players.LocalPlayer.Character.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=910030921"
+    game.Players.LocalPlayer.Character.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=910028158"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Cartoony", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=742637544"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=742638445"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=742640026"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=742638842"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=742637942"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Elder", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=845397899"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=845400520"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=845403856"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=845386501"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=845398858"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=845392038"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=845396048"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Knight", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=657595757"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=657568135"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=657552124"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=657564596"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=658409194"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=658360781"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=657600338"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Levitation", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616010382"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616003713"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Mage", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=707742142"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=707855907"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=707897309"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=707853694"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=707826056"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Ninja", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Pirate", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=750781874"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=750782770"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=750785693"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=750783738"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=750782230"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=750779899"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=750780242"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Robot", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616088211"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616089559"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616095330"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616091570"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616090535"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616086039"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616087089"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Stylish", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616136790"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616138447"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616146177"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616140816"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616139451"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616133594"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616134815"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Superhero", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616111295"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616113536"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616122287"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616117076"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616115533"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616104706"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616108001"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Toy", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Vampire", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083445855"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083450166"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083473930"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083462077"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083455352"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083443587"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Werewolf", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083195517"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083214717"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083178339"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083216690"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083182000"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083189019"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Animations"):Button("Zombie", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Target"):Button("Target GUI (SOON!)", function()
+    game.StarterGui:SetCore("SendNotification", {
+      Title = "DemonWare",
+      Text = "SOON!",
+      Duration = 15
+    })
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("ESP"):Button("ESP (SOON!)", function()
+    game.StarterGui:SetCore("SendNotification", {
+      Title = "DemonWare",
+      Text = "SOON!",
+      Duration = 15
+    })
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Credits/Security"):Button("Owner: msx8#0001/dawggore#5813", function()
+    game.StarterGui:SetCore("SendNotification", {
+      Title = "DemonWare",
+      Text = "Join Discord!",
+      Duration = 15
+    })
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Credits/Security"):Button("Discord: https://dsc.gg/demonware", function()
+    game.StarterGui:SetCore("SendNotification", {
+      Title = "DemonWare",
+      Text = "Join Discord!",
+      Duration = 15
+    })
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Credits/Security"):Button("UI Lib: vep#1032", function()
+    game.StarterGui:SetCore("SendNotification", {
+      Title = "DemonWare",
+      Text = "Credits for Ui lib",
+      Duration = 15
+    })
+  end)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))():Window("DemonWare", "Da Hood", "D"):Tab("Credits/Security"):Toggle("Anonymous", function()
+    pcall(function()
+      game.Players.LocalPlayer.Character.Shirt:Destroy()
+      game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
+      game.Players.LocalPlayer.Character.Humanoid.HealthDisplayDistance = math.huge
+      game.Players.LocalPlayer.Character.Humanoid.NameDisplayDistance = math.huge
+      game.Players.LocalPlayer.Character.RightUpperLeg.Size = Vector3.new(0, 0, 0)
+      game.Players.LocalPlayer.Character.RightUpperLeg.Massless = true
+      game.Players.LocalPlayer.Character.RightUpperLeg.CanCollide = false
+      heazd = true
+      while heazd == true do
+        pcall(function()
+          game.Players.LocalPlayer.Character.RightUpperLeg.RightHipRigAttachment.CFrame = CFrame.new(0, 100000,473632813, 0)
+          game.Players.LocalPlayer.Character.RightUpperLeg.CFrame = CFrame.new(0, 100000,473632813, 0)
+        end)
+        wait()
+      end
+    end)
+    wait(0,1)
+    pcall(function()
+      game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
+      game.Players.LocalPlayer.Character.Pants:Destroy()
+      game.Players.LocalPlayer.Character.Humanoid.HealthDisplayDistance = math.huge
+      game.Players.LocalPlayer.Character.Humanoid.NameDisplayDistance = math.huge
+      game.Players.LocalPlayer.Character.LeftUpperLeg.Size = Vector3.new(0, 0, 0)
+      game.Players.LocalPlayer.Character.LeftUpperLeg.Massless = true
+      game.Players.LocalPlayer.Character.LeftUpperLeg.CanCollide = false
+      heazd = true
+      while heazd == true do
+        pcall(function()
+          game.Players.LocalPlayer.Character.LeftUpperLeg.LeftHipRigAttachment.CFrame = CFrame.new(0, 100000,473632813, 0)
+          game.Players.LocalPlayer.Character.LeftUpperLeg.CFrame = CFrame.new(0, 100000,473632813, 0)
+        end)
+        wait()
+      end
+    end)
+    wait(0,1)
+    pcall(function()
+      game.Players.LocalPlayer.Character.Head.Neck:Destroy()
+      game.Players.LocalPlayer.Character.UpperTorso.NeckAttachment:Destroy()
+      game.Players.LocalPlayer.Character.Humanoid.HealthDisplayDistance = math.huge
+      game.Players.LocalPlayer.Character.Humanoid.NameDisplayDistance = math.huge
+      game.Players.LocalPlayer.Character.Head.Size = Vector3.new(0, 0, 0)
+      game.Players.LocalPlayer.Character.Head.Massless = true
+      game.Players.LocalPlayer.Character.Head.CanCollide = false
+      heazd = true
+      while heazd == true do
+        pcall(function()
+          game.Players.LocalPlayer.Character.Head.NeckRigAttachment.CFrame = CFrame.new(0, 100000,473632813, 0)
+          game.Players.LocalPlayer.Character.UpperTorso.NeckRigAttachment.CFrame = CFrame.new(0, 100000,473632813, 0)
+          game.Players.LocalPlayer.Character.Head.CFrame = CFrame.new(0, 100000,473632813, 0)
+        end)
+        wait()
+      end
+    end)
+  end)
+  game.StarterGui:SetCore("SendNotification", {
+    Title = "DemonWare",
+    Text = "bringing back the legacy",
+    Duration = 15
+  })
+  game.StarterGui:SetCore("SendNotification", {
+    Title = "made by zt#0069",
+    Text = "ok bye",
+    Duration = 15
+  })
+end
